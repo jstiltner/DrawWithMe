@@ -1,4 +1,8 @@
 'use strict';
+//injected the following two lines of code to troubleshoot Heroku deploy
+var host = location.origin.replace(/^http/, 'ws');
+this.connection = new WebSocket(host);
+
 const $ = jQuery
 
 $(document).ready(function() {
@@ -19,15 +23,12 @@ $(document).ready(function() {
     ctx.lineJoin = 'round';
     ctx.lineWidth = 10;
 
-
 	let id = Math.round(jQuery.now()*Math.random());
-
 
     let r = Math.floor(Math.random() * 255) + 70;
     let g = Math.floor(Math.random() * 255) + 70;
     let b = Math.floor(Math.random() * 255) + 70;
     let color = 'rgb(' + r + ',' + g + ',' + b + ')';
-
 
 	let drawing = false;
 
