@@ -11,8 +11,6 @@ app.set('view engine', 'jade');
 
 app.use(express.static('./'))
 
-// server.listen(8080);
-
 app.get('/', (req, res) => {
   res.render('index')
 })
@@ -22,7 +20,6 @@ io.sockets.on('connection', (socket) => {
     socket.broadcast.emit('moving', data);
   });
 });
-
 
 server.listen(PORT, function(err) {
     console.log(PORT)
