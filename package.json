@@ -7,7 +7,7 @@
     "socket.io": "^1.4.5"
   },
   "engines": {
-    "node": "0.6.x"
+    "node": "5.0.x"
   },
   "description": "this application showcases websockets and node and allows users to share a common canvas on which to doodle.",
   "main": "app.js",
