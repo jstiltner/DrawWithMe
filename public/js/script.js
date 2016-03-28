@@ -1,5 +1,8 @@
 'use strict';
 
+var host = location.origin.replace(/^http/, 'ws');
+this.connection = new WebSocket(host);
+
 const $ = jQuery
 
 $(document).ready(function() {
