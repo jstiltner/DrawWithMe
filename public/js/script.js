@@ -2,6 +2,8 @@
 
 const $ = jQuery
 
+const host = location.origin.replace(/^http/, 'ws')
+
 $(document).ready(function() {
 
 
@@ -32,7 +34,7 @@ $(document).ready(function() {
 	let clients = {};
 	let cursors = {};
 
-	let socket = io();
+	let socket = io(host);
 
 	socket.on('moving', function (data) {
 
