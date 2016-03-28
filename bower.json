@@ -1,0 +1,21 @@
+{
+  "name": "drawwithme",
+  "description": "this application showcases websockets and node and allows users to share a common canvas on which to doodle.",
+  "main": "app.js",
+  "authors": [
+    "Jason Stiltner <jasonstiltner@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/jstiltner/DrawWithMe",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^2.2.2"
+  }
+}
