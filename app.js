@@ -22,3 +22,8 @@ io.sockets.on('connection', (socket) => {
     socket.broadcast.emit('moving', data);
   });
 });
+
+
+server.listen(PORT, function(err) {
+    if(!err) { console.log("Listening on port " + PORT); }
+});

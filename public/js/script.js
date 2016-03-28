@@ -1,7 +1,4 @@
 'use strict';
-//injected the following two lines of code to troubleshoot Heroku deploy
-var host = location.origin.replace(/^http/, 'ws');
-this.connection = new WebSocket(host);
 
 const $ = jQuery
 
